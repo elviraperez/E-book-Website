@@ -45,7 +45,7 @@ flex-basis: 50%;
 min-width: 300px;
 }
 body{
-  background-image: url('https://cdn.dribbble.com/users/4381299/screenshots/9837787/final.jpg');
+  /* background-image: url('https://cdn.dribbble.com/users/4381299/screenshots/9837787/final.jpg'); */
   background-repeat: no-repeat;
   background-size: cover;
   /* position: relative;

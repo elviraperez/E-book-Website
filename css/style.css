@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 .navbar{
+  /* position: fixed; */
   display: flex;
   align-items: center;
   padding: 20px;
@@ -46,13 +47,50 @@ min-width: 300px;
 body{
   background-image: url('https://cdn.dribbble.com/users/4381299/screenshots/9837787/final.jpg');
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
+  /* position: relative;
+  overflow: hidden;
+  opacity: 1; */
 }
+/* .custom-background{
+  z-index: -1;
+  opacity: 0.6;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+} */
 .col-2 h1{
   font-size: 20px;
   line-height: 60px;
-  
 }
 .header{
   background: radial-gradient(pink);
+}
+.categories{
+  margin: 70px;
+}
+.col-3{
+  flex-basis: 30%;
+  min-width: 250px;
+  margin-bottom: 30px;
+}
+.col-3 img{
+  width: 100%;
+}
+.container{
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.col-4{
+  flex-basis: 25%;
+  padding: 10%;
+  min-width: 200px;
+  margin-bottom: 50px;
+}
+.col-4 img{
+width: 200px;
 }

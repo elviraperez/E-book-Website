@@ -45,9 +45,10 @@ flex-basis: 50%;
 min-width: 300px;
 }
 body{
-  /* background-image: url('https://cdn.dribbble.com/users/4381299/screenshots/9837787/final.jpg'); */
+  background-image: url("../BookstoreBackground.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
+  /* opacity: 0.2; */
   /* position: relative;
   overflow: hidden;
   opacity: 1; */
@@ -66,7 +67,7 @@ body{
   line-height: 60px;
 }
 .header{
-  background: radial-gradient(pink);
+  background-color: radial-gradient(pink);
 }
 .categories{
   margin: 70px;
@@ -93,4 +94,57 @@ body{
 }
 .col-4 img{
 width: 200px;
+}
+/*start of footer*/
+footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-info {
+  flex-basis: 50%;
+  margin-bottom: 20px;
+}
+
+.contact-info h4 {
+  margin-top: 0;
+}
+
+.social-links a {
+  margin-right: 10px;
+}
+
+.social-links a:last-child {
+  margin-right: 0;
+}
+
+.social-links i {
+  font-size: 20px;
+  color: #555;
+}
+
+.social-links i:hover {
+  color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
+  
+  .contact-info, .social-links {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  
+  .social-links {
+    margin-top: 10px;
+  }
 }
